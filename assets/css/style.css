@@ -1,0 +1,67 @@
+/* background color */
+
+body {
+    background-color: #4a4a4a;
+}
+
+/* general styles */
+
+.content-center {
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+
+
+/* navbar */
+
+.search-text {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* heading text styles */
+
+.header-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0cfdff;
+}
+
+.blurb-text {
+    text-align: center;
+    color: #0cfdff;
+    font-style: italic;
+    
+}
+
+
+/* dropdown selector styles */
+
+.custom-select {
+    width: 75%;
+    margin-top: 25px;
+    
+    
+}
+
+
+/* reset button */
+
+.reset-button {
+    margin-top: 15px;
+    margin-right:10px;
+}
+
+
+/* map size */
+
+#map {
+    min-height: 360px;
+    width: 66%;
+    margin-top: 50px
+    
+    
+}
+
