@@ -1,24 +1,230 @@
-[{
-    "name": "Europe"
-     
-  },
-  {
-    "name": "Africa"
+
+{
+
+    "Europe": {
+      "countries": [{
+          "name": "Austria"
+        },
+
+        {
+          "name": "Beglium"
+        },
+
+        {
+          "name": "Bulgaria"
+        },
+
+        {
+          "name": "Croatia"
+        },
+
+        {
+          "name": "Czech Republic"
+        },
+
+        {
+          "name": "France"
+        },
+
+        {
+          "name": "Czech Republic"
+        },
+
+        {
+          "name": "Germany"
+        },
+
+        {
+          "name": "Greece"
+        },
+
+        {
+          "name": "Italy"
+        },
+
+        {
+          "name": "Latvia"
+        },
+
+        {
+          "name": "Malta"
+        },
+
+        {
+          "name": "Monaco"
+        },
+
+        {
+          "name": "Netherlands"
+        },
+
+        {
+          "name": "Poland"
+        },
+
+        {
+          "name": "Portugal"
+        },
+
+        {
+          "name": "Russia"
+        },
+
+        {
+          "name": "Spain"
+        },
+
+        {
+          "name": "Sweden"
+        },
+
+        {
+          "name": "Turkey"
+        },
+
+        {
+          "name": "Ukraine"
+        },
+
+        {
+          "name": "United Kingdom"
+        }
+
+      ]
+    },
     
-  },
-  {
-    "name": "Asia"
+    "Africa": {
+      "countries": [
+        {
+          "name" : "Algeria"
+        },
+        
+        {
+          "name" : "Egypt"
+        },
+        
+        {
+          "name" : "Gambia"
+        },
+        
+        {
+          "name" : "Kenya"
+        },
+        
+        {
+          "name" : "Morocco"
+        },
+        
+        {
+          "name" : "South Africa"
+        },
+        
+        {
+          "name" : "Tunisia"
+        }
+      ]
+    },
     
-  },
-  {
-    "name": "South America"
+    "Asia": {
+      "countries": [
+        {
+          "name" : "China"
+        },
+        
+        {
+          "name" : "India"
+        },
+        
+        {
+          "name" : "Japan"
+        },
+        
+        {
+          "name" : "Malaysia"
+        },
+        
+        {
+          "name" : "Maldives"
+        },
+        
+        {
+          "name" : "Philippines"
+        },
+        
+        {
+          "name" : "Singapore"
+        },
+        
+        {
+          "name" : "Thailand"
+        }
+      ]
+    },
     
-  },
-  {
-    "name": "North America"
-  },
-  {
-    "name": "Oceania"
+    "South America": {
+      "countries": [
+        {
+          "name" : "Argentina"
+        },
+        
+        {
+          "name" : "Brazil"
+        },
+        
+        {
+          "name" : "Ecuador"
+        },
+        
+        {
+          "name" : "Colombia"
+        }
+      ]
+    },
     
-  }
-]
+    "North America": {
+      "countries": [
+        
+        {
+          "name" : "Canada"
+        },
+        
+        {
+          "name" : "Costa Rica"
+        },
+        
+        {
+          "name" : "Cuba"
+        },
+        
+        {
+          "name" : "Costa Rica"
+        },
+        
+        {
+          "name" : "Jamaica"
+        },
+        
+        {
+          "name" : "USA"
+        }
+        
+      ]
+    },
+    
+    "Oceania": {
+      "countries": [
+        {
+          "name" : "Australia"
+        },
+        
+        {
+          "name" : "New Zealand"
+        }
+      ]
+    }
+}
+
+
+  
+ 
+  
