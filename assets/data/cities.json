@@ -1,24 +1,119 @@
-[{
-    "name": "Europe"
-     
+
+
+ {
+
+  "Austria": {
+    "cities": [
+
+      {
+        "name": "Vienna"
+      },
+
+      {
+        "name": "Salzburg"
+      },
+
+      {
+        "name": "Innsbruck"
+      }
+    ]
   },
-  {
-    "name": "Africa"
-    
+
+  "Belgium": {
+    "cities": [
+
+      {
+        "name": "Bruges"
+      },
+
+      {
+        "name": "Brussels"
+      },
+
+      {
+        "name": "Ghent"
+      }
+    ]
   },
-  {
-    "name": "Asia"
-    
+
+  "Bulgaria": {
+    "cities": [
+
+      {
+        "name": "Bansko"
+      },
+
+      {
+        "name": "Plovdiv"
+      },
+
+      {
+        "name": "Sofia"
+      },
+      
+      {
+        "name": "Varna"
+      }
+    ]
   },
-  {
-    "name": "South America"
-    
+  
+  "Croatia": {
+    "cities": [
+
+      {
+        "name": "Porec"
+      },
+
+      {
+        "name": "Pula"
+      },
+
+      {
+        "name": "Sibenik"
+      },
+      
+      {
+        "name": "Zadar"
+      }
+    ]
   },
-  {
-    "name": "North America"
+  
+  "Czech Republic": {
+    "cities": [
+
+      {
+        "name": "Brno"
+      },
+
+      {
+        "name": "Prague"
+      }
+    ]
   },
-  {
-    "name": "Oceania"
-    
+  
+  "France": {
+    "cities": [
+
+      {
+        "name": "Bordeaux"
+      },
+      
+      {
+        "name": "Caen"
+      },
+
+      {
+        "name": "Lille"
+      },
+      
+      {
+        "name": "Nice"
+      },
+      
+      {
+        "name": "Paris"
+      }
+    ]
   }
-]
+
+}
