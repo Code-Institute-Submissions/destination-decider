@@ -1,6 +1,6 @@
+{
 
 
- {
 
   "Austria": {
     "cities": [
@@ -50,13 +50,13 @@
       {
         "name": "Sofia"
       },
-      
+
       {
         "name": "Varna"
       }
     ]
   },
-  
+
   "Croatia": {
     "cities": [
 
@@ -71,13 +71,13 @@
       {
         "name": "Sibenik"
       },
-      
+
       {
         "name": "Zadar"
       }
     ]
   },
-  
+
   "Czech Republic": {
     "cities": [
 
@@ -90,14 +90,14 @@
       }
     ]
   },
-  
+
   "France": {
     "cities": [
 
       {
         "name": "Bordeaux"
       },
-      
+
       {
         "name": "Caen"
       },
@@ -105,15 +105,410 @@
       {
         "name": "Lille"
       },
-      
+
       {
         "name": "Nice"
       },
-      
+
       {
         "name": "Paris"
       }
     ]
-  }
+  },
 
+  "Germany": {
+    "cities": [{
+        "name": "Berlin"
+      },
+
+      {
+        "name": "Cologne"
+      },
+
+      {
+        "name": "Hamburg"
+      },
+
+      {
+        "name": "Munich"
+      }
+    ]
+  },
+
+  "Greece": {
+    "cities": [{
+        "name": "Athens"
+      },
+
+      {
+        "name": "Corfu"
+      },
+
+      {
+        "name": "Crete"
+      }
+    ]
+  },
+
+  "Italy": {
+    "cities": [{
+        "name": "Milan"
+      },
+
+      {
+        "name": "Naples"
+      },
+
+      {
+        "name": "Palermo"
+      },
+
+      {
+        "name": "Rome"
+      },
+
+      {
+        "name": "Turin"
+      }
+    ]
+  },
+
+  "Latvia": {
+    "cities": [{
+      "name": "Riga"
+    }]
+  },
+
+  "Malta": {
+    "cities": [{
+        "name": "Gozo"
+      },
+
+      {
+        "name": "Valletta"
+      }
+    ]
+  },
+
+  "Monaco": {
+    "cities": [{
+        "name": "French Riviera"
+      },
+
+      {
+        "name": "La Condamine"
+      }
+    ]
+  },
+
+  "Netherlands": {
+    "cities": [{
+        "name": "Amsterdam"
+      },
+
+      {
+        "name": "Rotterdam"
+      }
+    ]
+  },
+
+  "Poland": {
+    "cities": [{
+        "name": "Karkow"
+      },
+
+      {
+        "name": "Warsaw"
+      }
+    ]
+  },
+
+  "Portugal": {
+    "cities": [{
+        "name": "Lisbon"
+      },
+
+      {
+        "name": "Porto"
+      }
+    ]
+  },
+
+  "Russia": {
+    "cities": [{
+        "name": "Moscow"
+      },
+
+      {
+        "name": "Saint Petersburg"
+      }
+    ]
+  },
+
+  "Spain": {
+    "cities": [{
+        "name": "Barcelona"
+      },
+
+      {
+        "name": "Granada"
+      },
+
+      {
+        "name": "Madrid"
+      },
+
+      {
+        "name": "Seville"
+      }
+    ]
+  },
+
+  "Russia": {
+    "cities": [{
+      "name": "Stockholm"
+    }]
+  },
+
+  "Turkey": {
+    "cities": [{
+      "name": "Istanbul"
+    }]
+  },
+
+  "Ukraine": {
+    "cities": [{
+      "name": "Kiev"
+    }]
+  },
+
+  "United Kingdom": {
+    "cities": [{
+        "name": "Edinburgh"
+      },
+
+      {
+        "name": "Glasgow"
+      },
+
+      {
+        "name": "London"
+      },
+
+      {
+        "name": "Manchester"
+      }
+    ]
+  },
+
+
+
+  "Algeria": {
+    "cities": [{
+      "name": "Algiers"
+    }]
+  },
+
+  "Egypt": {
+    "cities": [{
+        "name": "Cairo"
+      },
+
+      {
+        "name": "Giza"
+      }
+    ]
+  },
+
+  "Gambia": {
+    "cities": [{
+        "name": "Bakau"
+      },
+
+      {
+        "name": "Banjul"
+      },
+
+      {
+        "name": "Serekunda"
+      }
+    ]
+  },
+
+  "South Africa": {
+    "cities": [{
+        "name": "Cape Town"
+      },
+
+      {
+        "name": "Johannesburg"
+      }
+    ]
+  },
+
+  "Tunisia": {
+    "cities": [{
+        "name": "Djerba"
+      },
+
+      {
+        "name": "Sousse"
+      }
+    ]
+  },
+
+
+
+  "China": {
+    "cities": [{
+        "name": "Beijing"
+      },
+
+      {
+        "name": "Shanghai"
+      }
+    ]
+  },
+
+  "India": {
+    "cities": [{
+        "name": "Agra"
+      },
+
+      {
+        "name": "Delhi"
+      }
+    ]
+  },
+
+  "Japan": {
+    "cities": [{
+        "name": "Kyoto"
+      },
+
+      {
+        "name": "Tokyo"
+      }
+    ]
+  },
+
+  "Malaysia": {
+    "cities": [{
+      "name": "Kuala Lumpur"
+    }]
+  },
+
+  "Thailand": {
+    "cities": [{
+        "name": "Bangkok"
+      },
+
+      {
+        "name": "Phi Phi Islands"
+      }
+    ]
+  },
+  
+  "Argentina": {
+    "cities": [{
+        "name": "Buenos Aires"
+      }
+    ]
+  },
+  
+  "Brazil": {
+    "cities": [{
+        "name": "Rio de Janeiro"
+      },
+
+      {
+        "name": "Sao Paulo"
+      }
+    ]
+  },
+  
+  "USA": {
+    "cities": [{
+        "name": "Austin, TX"
+      },
+
+      {
+        "name": "Boston"
+      },
+      
+      {
+        "name": "Chicago"
+      },
+      
+      {
+        "name": "New York"
+      },
+      
+      {
+        "name": "San Francisco"
+      }
+      
+      
+    ]
+  },
+  
+  "Canada": {
+    "cities": [{
+        "name": "Montreal"
+      },
+
+      {
+        "name": "Toronto"
+      },
+      
+      {
+        "name": "Vancouver"
+      }
+    ]
+  },
+  
+  "Jamaica": {
+    "cities": [{
+        "name": "Kingston"
+      },
+      
+       {
+        "name": "Montego Bay"
+      }
+    ]
+  },
+  
+  "Australia": {
+    "cities": [{
+        "name": "Adelaide"
+      },
+      
+      {
+        "name": "Brisbane"
+      },
+      
+      {
+        "name": "Melbourne"
+      },
+      
+      {
+        "name": "Perth"
+      },
+      
+      {
+        "name": "Sydney"
+      }
+    ]
+  },
+  
+  "New Zealand": {
+    "cities": [{
+        "name": "Aukland"
+      },
+      
+       {
+        "name": "Christchurch"
+      }
+    ]
+  }
 }

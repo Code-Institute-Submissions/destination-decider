@@ -95,19 +95,25 @@ $("#random").click(function() {
     var continent_name = continent_keys[Math.floor(Math.random() * continent_keys.length)];
     console.log("continent", continent_name);
 
+    var country_names = data[continent_name];
+    console.log("country names", country_names);
+
+    var country = country_names.countries[Math.floor(Math.random() * country_names.countries.length)];
+    console.log("country", country);
+
     continentDropdown.empty();
     continentDropdown.append($('<option selected="true" enabled></option>').attr('value', continent_name).text(continent_name));
 
+    countryDropdown.empty();
+    countryDropdown.append($('<option selected="true" enabled></option>').attr('value', country.name).text(country.name));
+
 
     $.getJSON('/assets/data/cities.json', function(data) {
-      var country_keys = Object.keys(data);
-      console.log("country keys", country_keys);
 
-      var country_name = country_keys[Math.floor(Math.random() * country_keys.length)];
-      console.log("country", country_name);
 
-      var cities = data[country_name];
-      console.log(cities);
+      var cities = data[country.name];
+      console.log(data);
+      console.log("random city", cities);
 
       var city = cities.cities[Math.floor(Math.random() * cities.cities.length)];
       console.log("city", city);
@@ -115,25 +121,8 @@ $("#random").click(function() {
       cityDropdown.empty();
       cityDropdown.append($('<option selected="true" enabled></option>').attr('value', city).text(city.name));
 
-      countryDropdown.empty();
-      countryDropdown.append($('<option selected="true" enabled></option>').attr('value', country_name).text(country_name));
-
-
-
-
     });
 
-
-
-
-
-
-
-
-
-
   });
-
-
 
 })

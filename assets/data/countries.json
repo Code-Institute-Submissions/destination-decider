@@ -26,9 +26,7 @@
           "name": "France"
         },
 
-        {
-          "name": "Czech Republic"
-        },
+      
 
         {
           "name": "Germany"
@@ -107,13 +105,6 @@
           "name" : "Gambia"
         },
         
-        {
-          "name" : "Kenya"
-        },
-        
-        {
-          "name" : "Morocco"
-        },
         
         {
           "name" : "South Africa"
@@ -142,18 +133,7 @@
         {
           "name" : "Malaysia"
         },
-        
-        {
-          "name" : "Maldives"
-        },
-        
-        {
-          "name" : "Philippines"
-        },
-        
-        {
-          "name" : "Singapore"
-        },
+      
         
         {
           "name" : "Thailand"
@@ -169,15 +149,8 @@
         
         {
           "name" : "Brazil"
-        },
-        
-        {
-          "name" : "Ecuador"
-        },
-        
-        {
-          "name" : "Colombia"
         }
+      
       ]
     },
     
@@ -186,18 +159,6 @@
         
         {
           "name" : "Canada"
-        },
-        
-        {
-          "name" : "Costa Rica"
-        },
-        
-        {
-          "name" : "Cuba"
-        },
-        
-        {
-          "name" : "Costa Rica"
         },
         
         {
