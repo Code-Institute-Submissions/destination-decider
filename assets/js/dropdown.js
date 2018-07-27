@@ -65,7 +65,12 @@ countryDropdown.on("change", function(event) {
 
 //reset button
 
+
+
 $("#reset").click(function() {
+  
+  document.getElementById("search").value = "Know your destination?";
+  
   cityDropdown.empty();
   countryDropdown.empty(); // remove options that were previously populated
   continentDropdown.empty();
@@ -106,7 +111,8 @@ $("#random").click(function() {
 
     countryDropdown.empty();
     countryDropdown.append($('<option selected="true" enabled></option>').attr('value', country.name).text(country.name));
-
+    
+    
 
     $.getJSON('/assets/data/cities.json', function(data) {
 
@@ -120,7 +126,9 @@ $("#random").click(function() {
 
       cityDropdown.empty();
       cityDropdown.append($('<option selected="true" enabled></option>').attr('value', city).text(city.name));
-
+      
+      
+      
     });
 
   });

@@ -27,8 +27,8 @@
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <a class="navbar-brand">Destination Decider</a>
         <form class="form-inline">
-            <input class="form-control search-text mr-sm-2" type="search" placeholder="Know your destination?" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control search-text mr-sm-2" id="search" type="search" placeholder="Know your destination?" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">Search</button>
         </form>
     </nav>
 
@@ -92,6 +92,7 @@
         <div id="map"></div>
     </div>
 
+    
 
     </div>
 
@@ -102,18 +103,23 @@
 
     <!-- bootstrap js/jquery/popper -->
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <!-- google maps api -->
+    
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPKpgJgHFpepY9mi8MRR3hVqqg1pjAsDc&callback=initMap" async defer></script>
     
-    
+
+
     <!-- local js files -->
-    <script type="text/javascript" src="/assets/js/map.js"></script>
+    
     <script type="text/javascript" src="/assets/js/dropdown.js"></script>
+    <script type="text/javascript" src="/assets/js/map.js"></script>
+    
+    <!-- google maps api -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPKpgJgHFpepY9mi8MRR3hVqqg1pjAsDc&callback=initMap&libraries=places" async defer></script>
 </body>
 
 </html>
