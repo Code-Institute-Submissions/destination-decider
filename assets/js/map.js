@@ -48,6 +48,7 @@ function initMap() {
         }
 
         service.findPlaceFromQuery(randomLocation, callback);
+        
     });
 
 
@@ -58,13 +59,12 @@ function initMap() {
 
         var searchedLocation = {
             query: searchbarText,
-            fields: ['photos', 'formatted_address', 'name', 'rating', 'opening_hours', 'geometry'],
+            fields: ['geometry'],
+            
         }
 
         service.findPlaceFromQuery(searchedLocation, callback);
-
-
-        console.log(searchbarText);
+        
     });
 
 
@@ -74,10 +74,23 @@ function initMap() {
     $(cityDropdown).on("change", function() { // upon changing cityDropdown, this grabs your selection and puts a marker on it
         var desiredLocation = {
             query: cityDropdown.val(),
-            fields: ['photos', 'formatted_address', 'name', 'rating', 'opening_hours', 'geometry'],
+            fields: ['geometry'],
+            
         }
-
+        
+        
+        
+        var nearbyStuff = {
+            location: {lat:map.getCenter().lat(), lng: map.getCenter().lng()}, //using latLng of the map center, after map zooms in on selected city
+            radius: '5000',
+            type: ['zoo'], 
+        }
+        
+        console.log(map.getCenter().lat(),map.getCenter().lng());
+        
+        service.nearbySearch(nearbyStuff, callback);
         service.findPlaceFromQuery(desiredLocation, callback);
+        
     });
 
 
@@ -89,9 +102,8 @@ function initMap() {
                     marker.setMap(null);
                 }
                 createMarker(results[i]);
+                
             }
         }
     }
-
-
 }

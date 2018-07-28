@@ -69,7 +69,7 @@ countryDropdown.on("change", function(event) {
 
 $("#reset").click(function() {
   
-  document.getElementById("search").value = "Know your destination?";
+  
   
   cityDropdown.empty();
   countryDropdown.empty(); // remove options that were previously populated
