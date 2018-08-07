@@ -67,10 +67,7 @@ countryDropdown.on("change", function(event) {
 
 
 
-$("#reset").click(function() {
-  
-  
-  
+function resetDropdowns() {
   cityDropdown.empty();
   countryDropdown.empty(); // remove options that were previously populated
   continentDropdown.empty();
@@ -84,12 +81,18 @@ $("#reset").click(function() {
       continentDropdown.append($('<option></option>').attr('value', entry.name).text(entry.name)); //populate continent dropdown
     })
   });
+}
+
+$("#reset").click(function() {
+  
+  resetDropdowns();
 
 });
 
 // random button
 
-$("#random").click(function() {
+function setDropdownsRandom() {
+  var dfd = jQuery.Deferred();
 
   $.getJSON('/assets/data/countries.json', function(data) {
 
@@ -111,8 +114,8 @@ $("#random").click(function() {
 
     countryDropdown.empty();
     countryDropdown.append($('<option selected="true" enabled></option>').attr('value', country.name).text(country.name));
-    
-    
+
+
 
     $.getJSON('/assets/data/cities.json', function(data) {
 
@@ -126,11 +129,12 @@ $("#random").click(function() {
 
       cityDropdown.empty();
       cityDropdown.append($('<option selected="true" enabled></option>').attr('value', city).text(city.name));
-      
-      
-      
+
+      dfd.resolve("hurray");
+
     });
 
   });
 
-})
+  return dfd.promise();
+}
