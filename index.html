@@ -24,29 +24,33 @@
 
     <!-- navbar -->
 
-    <nav class="navbar navbar-dark bg-dark justify-content-between">
-        <a class="navbar-brand">Destination Decider</a>
+    <nav class="navbar navbar-dark justify-content-between">
+        <a class="navbar-brand"></a>
         <form class="form-inline">
             <input class="form-control search-text mr-sm-2" id="search" type="search" placeholder="Know your destination?" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">Search</button>
+            <button class="btn btn-outline-success orange-button my-2 my-sm-0" id="searchButton" type="submit">Search</button>
         </form>
     </nav>
 
     <!-- header text / description -->
 
-    <div class="container-fluid">
+    <div class="jumbotron">
+        <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="header-text">Destination Decider</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="header-text">Destination Decider</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="blurb-text">
-                    Need help deciding where to go on holiday? Let the Destination Decider help! <br> Use the continent and country filters to find a city to visit, or click random and we will do all the work!
-                </p>
+            <hr class="orange-hr">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="blurb-text">
+                        Need help deciding where to go on holiday? Let the Destination Decider help! <br> Use the continent and country filters to find a city to visit, or click random and we will do all the work!
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -82,8 +86,8 @@
 
         <div class="row">
             <div class="col-sm-12 content-center">
-                <button type="button" id="reset" class="btn btn-outline-info reset-button">Reset</button>
-                <button type="button" id="random" class="btn btn-outline-info reset-button">Random</button>
+                <button type="button" id="reset" class="btn btn-outline-info orange-button">Reset</button>
+                <button type="button" id="random" class="btn btn-outline-info orange-button">Random</button>
             </div>
         </div>
     </div>
@@ -92,21 +96,36 @@
         <div id="map"></div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-12 content-center">
-            <button type="button" id="restaurantHide" class="btn btn-outline-info reset-button">Hide Restaurants</button>
-            <button type="button" id="hotelHide" class="btn btn-outline-info reset-button">Hide Hotels</button>
-            <button type="button" id="touristHide" class="btn btn-outline-info reset-button">Hide Tourist Attractions</button>
+    <div class="jumbotron button-jumbotron">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4  content-center">
+                <button type="button" id="restaurantHide" class="btn orange-button btn-outline-info ">Hide Restaurants</button>
+            </div>
+
+            <div class="col-sm-12 col-lg-4  content-center">
+                <button type="button" id="hotelHide" class="btn orange-button btn-outline-info ">Hide Hotels</button>
+            </div>
+            <div class="col-sm-12 col-lg-4  content-center">
+                <button type="button" id="touristHide" class="btn orange-button btn-outline-info tourist-text ">Hide Tourist Attractions</button>
+            </div>
         </div>
-    </div>
     
+
     <div class="row">
-        <div class="col-sm-12 content-center">
-            <button type="button" id="restaurantShow" class="btn btn-outline-info reset-button">Show Restaurants</button>
-            <button type="button" id="hotelShow" class="btn btn-outline-info reset-button">Show Hotels</button>
-            <button type="button" id="touristShow" class="btn btn-outline-info reset-button">Show Tourist Attractions</button>
+        <div class="col-sm-12 col-lg-4 content-center">
+            <button type="button" id="restaurantShow" class="btn orange-button btn-outline-info ">Show Restaurants</button>
+        </div>
+        
+        <div class="col-sm-12 col-lg-4 content-center">
+            <button type="button" id="hotelShow" class="btn orange-button btn-outline-info">Show Hotels</button>
+        </div>
+        
+        <div class="col-sm-12 col-lg-4 content-center">
+            <button type="button" id="touristShow" class="btn orange-button btn-outline-info tourist-text ">Show Tourist Attractions</button>
         </div>
     </div>
+   </div>
+</div>
 
 
 

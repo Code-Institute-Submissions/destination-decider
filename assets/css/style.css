@@ -1,39 +1,76 @@
-/* background color */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700');
+
+/* background image */
 
 body {
-    background-color: #4a4a4a;
+    background: url("/assets/images/cityscape.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 /* general styles */
 
 .content-center {
-    align-items:center;
-    display:flex;
-    justify-content:center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* navbar */
+
+.navbar-dark {
+    background-color: rgb(0, 0, 0, 0.5);
+}
 
 .search-text {
     font-style: italic;
     font-size: 0.9rem;
 }
 
+
+
+/* jumbotron */
+
+.jumbotron {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.button-jumbotron {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 50%;
+    margin: auto;
+
+
+
+}
+
 /* heading text styles */
 
 .header-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
     text-align: center;
+    font-size: 55px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #0cfdff;
+    color: #ff6d31;
+
 }
 
 .blurb-text {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: #0cfdff;
-    font-style: italic;
-    
+    color: white;
+
+
 }
 
 
@@ -42,16 +79,51 @@ body {
 .custom-select {
     width: 75%;
     margin-top: 25px;
-    
-    
+
+
 }
 
 
-/* reset button */
+/* buttons */
 
-.reset-button {
+.orange-button {
+    color: #ff6d31;
+    border-color: #ff6d31;
     margin-top: 15px;
-    margin-right:10px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+.tourist-text {
+    font-size: 13px;
+    line-height: 2em;
+}
+
+.orange-button:active,
+.orange-button:hover,
+.orange-button:focus {
+    background-color: black;
+    color: #ff6d31;
+    box-shadow: none;
+    border-color: #ff6d31;
+}
+
+
+/* removing bootstrap default active colours */
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show>.btn-outline-success.dropdown-toggle,
+
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.show>.btn-outline-info.dropdown-toggle {
+    color: #ff6d31;
+    background-color: black;
+    border-color: #ff6d31;
+    box-shadow: none;
 }
 
 
@@ -60,8 +132,18 @@ body {
 #map {
     min-height: 360px;
     width: 66%;
-    margin-top: 50px
-    
-    
+    margin-top: 50px;
+    -webkit-box-shadow: 3px 6px 23px 1px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 3px 6px 23px 1px rgba(0, 0, 0, 0.50);
+    box-shadow: 3px 6px 23px 1px rgba(0, 0, 0, 0.50);
 }
 
+/* hr styles */
+
+hr.orange-hr {
+    border: 0;
+    height: 1px;
+    background: transparent;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ff6d31, rgba(0, 0, 0, 0));
+    max-width: 50%;
+}

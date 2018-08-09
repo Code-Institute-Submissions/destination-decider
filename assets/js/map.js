@@ -97,7 +97,7 @@ function initMap() {
                 infowindow.close() // close any other infowindows first
             }
             infowindow = new google.maps.InfoWindow({
-                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '">Open on Google Maps</a>'
+                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '" target="_blank">Open on Google Maps</a>'
 
             }); // initialize infowindow functionality
             infowindow.open(map, this);
@@ -134,7 +134,7 @@ function initMap() {
             }
 
             infowindow = new google.maps.InfoWindow({
-                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '">Open on Google Maps</a>'
+                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '" target="_blank">Open on Google Maps</a>'
 
             }); // initialize infowindow functionality
             infowindow.open(map, this);
@@ -173,7 +173,7 @@ function initMap() {
             }
 
             infowindow = new google.maps.InfoWindow({
-                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '">Open on Google Maps</a>'
+                content: results.name + '<br/>' + '<a href="https://www.google.com/maps/search/?api=1&query=' + results.name + '&query_place_id=' + results.place_id + '" target="_blank">Open on Google Maps</a>'
 
             }); // initialize infowindow functionality
             infowindow.open(map, this);
@@ -276,8 +276,6 @@ function initMap() {
                     marker.setMap(null);
                 }
                 createMarker(results[i]);
-
-
             }
 
             var nearbyRestaurant = {
@@ -348,7 +346,7 @@ function initMap() {
     }
 
     function callbackRestaurant(results, status) {
-        console.log("results2", results);
+        console.log("restaurant results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 var place2 = results[i];
@@ -363,7 +361,7 @@ function initMap() {
     }
 
     function callbackLodging(results, status) {
-        console.log("results2", results);
+        console.log("lodging results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 var place2 = results[i];
@@ -376,7 +374,7 @@ function initMap() {
     }
 
     function callbackTourist(results, status) {
-        console.log("results2", results);
+        console.log("tourist results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 var place2 = results[i];
@@ -406,36 +404,36 @@ function initMap() {
     // RESTAURANT MARKER TOGGLES
 
     $('#restaurantHide').on("click", function() {
-        
+
         toggleMarkers(restaurantMarkers);
     });
 
     $('#restaurantShow').on("click", function() {
-        
+
         showMarkers(restaurantMarkers);
     });
-    
+
     // HOTEL MARKER TOGGLES
-    
+
     $('#hotelHide').on("click", function() {
-        
+
         toggleMarkers(lodgingMarkers);
     });
 
     $('#hotelShow').on("click", function() {
-        
+
         showMarkers(lodgingMarkers);
     });
-    
-   // TOURIST ATTRACTION TOGGLES
-   
+
+    // TOURIST ATTRACTION TOGGLES
+
     $('#touristHide').on("click", function() {
-        
+
         toggleMarkers(touristMarkers);
     });
 
     $('#touristShow').on("click", function() {
-        
+
         showMarkers(touristMarkers);
     });
 
