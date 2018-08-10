@@ -7,7 +7,7 @@ continentDropdown.empty();
 continentDropdown.append('<option selected="true" disabled>Select Continent</option>');
 continentDropdown.prop('selectedIndex', 0);
 
-const continents = '/assets/data/continents.json';
+const continents = 'assets/data/continents.json';
 
 $.getJSON(continents, function(data) {
   $.each(data, function(key, entry) {
@@ -28,7 +28,7 @@ continentDropdown.on("change", function(event) {
   console.log("dropdown value changed", continentDropdown.val());
 
 
-  $.getJSON('/assets/data/countries.json', function(data) {
+  $.getJSON('assets/data/countries.json', function(data) {
     console.log("data", data[continentDropdown.val()]["countries"]);
     countryDropdown.empty();
     countryDropdown.append('<option selected="true" disabled>Select Country</option>');
@@ -50,7 +50,7 @@ countryDropdown.on("change", function(event) {
   console.log("dropdown value changed", countryDropdown.val());
 
 
-  $.getJSON('/assets/data/cities.json', function(data) {
+  $.getJSON('assets/data/cities.json', function(data) {
     console.log("data", data[countryDropdown.val()]["cities"]);
     cityDropdown.empty();
     cityDropdown.append('<option selected="true" disabled>Select City</option>');
@@ -94,7 +94,7 @@ $("#reset").click(function() {
 function setDropdownsRandom() {
   var dfd = jQuery.Deferred();
 
-  $.getJSON('/assets/data/countries.json', function(data) {
+  $.getJSON('assets/data/countries.json', function(data) {
 
     var continent_keys = Object.keys(data);
     console.log("continent_keys", continent_keys);
@@ -117,7 +117,7 @@ function setDropdownsRandom() {
 
 
 
-    $.getJSON('/assets/data/cities.json', function(data) {
+    $.getJSON('assets/data/cities.json', function(data) {
 
 
       var cities = data[country.name];
