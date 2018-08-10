@@ -110,6 +110,13 @@ body {
     border-color: #ff6d31;
 }
 
+.btn:disabled,
+.orange-button:active,
+.btn-outline-info:disabled {
+    color: #ffa6814d;
+    background-color: transparent;
+}
+
 
 /* removing bootstrap default active colours */
 

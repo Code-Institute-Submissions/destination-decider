@@ -138,11 +138,9 @@
 
       {
         "name": "Corfu"
-      },
-
-      {
-        "name": "Crete"
       }
+
+      
     ]
   },
 
@@ -189,11 +187,9 @@
   "Monaco": {
     "cities": [{
         "name": "French Riviera"
-      },
-
-      {
-        "name": "La Condamine"
       }
+
+      
     ]
   },
 
@@ -243,7 +239,7 @@
 
   "Spain": {
     "cities": [{
-        "name": "Barcelona"
+        "name": "Barcelona City"
       },
 
       {
@@ -260,7 +256,7 @@
     ]
   },
 
-  "Russia": {
+  "Sweden": {
     "cities": [{
       "name": "Stockholm"
     }]
@@ -465,7 +461,7 @@
   
   "Jamaica": {
     "cities": [{
-        "name": "Kingston"
+        "name": "Kingston, Jamaica"
       },
       
        {

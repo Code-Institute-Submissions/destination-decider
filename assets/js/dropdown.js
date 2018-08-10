@@ -93,7 +93,7 @@ $("#reset").click(function() {
 
 function setDropdownsRandom() {
   var dfd = jQuery.Deferred();
-
+  
   $.getJSON('/assets/data/countries.json', function(data) {
 
     var continent_keys = Object.keys(data);

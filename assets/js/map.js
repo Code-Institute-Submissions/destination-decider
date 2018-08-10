@@ -204,10 +204,20 @@ function initMap() {
     service = new google.maps.places.PlacesService(map);
 
 
-
+    function disableButton(button) {
+        button.disabled = true;
+        setTimeout(function() {
+            button.disabled = false;
+        }, 3000);
+    }
+    
+    
     $("#random").click(function() {
 
         DeleteMarkers();
+        disableButton(this);
+        
+        
         setDropdownsRandom().then(function() {
             console.log("now do this");
 
@@ -349,7 +359,7 @@ function initMap() {
         console.log("restaurant results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
-                var place2 = results[i];
+                var placeRestaurant = results[i];
 
 
                 createMarkerRestaurant(results[i]);
@@ -364,7 +374,7 @@ function initMap() {
         console.log("lodging results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
-                var place2 = results[i];
+                var placeLodging = results[i];
 
                 createMarkerLodging(results[i]);
 
@@ -377,7 +387,7 @@ function initMap() {
         console.log("tourist results", results);
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
-                var place2 = results[i];
+                var placeTourist = results[i];
 
                 createMarkerTourist(results[i]);
             }
