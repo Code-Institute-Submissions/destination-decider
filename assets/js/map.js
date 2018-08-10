@@ -54,7 +54,7 @@ function initMap() {
 
 
     var marker;
-
+    var callCounter = 0;
 
 
     // CREATE MARKERS FOR PICKED CITY / ZOOM IN TO LOCATION
@@ -204,20 +204,21 @@ function initMap() {
     service = new google.maps.places.PlacesService(map);
 
 
+    // disable button for 3 seconds to prevent users spamming and breaking the site
+
     function disableButton(button) {
         button.disabled = true;
         setTimeout(function() {
             button.disabled = false;
         }, 3000);
     }
-    
-    
+
+
     $("#random").click(function() {
 
         DeleteMarkers();
         disableButton(this);
-        
-        
+
         setDropdownsRandom().then(function() {
             console.log("now do this");
 
@@ -251,6 +252,7 @@ function initMap() {
 
         service.findPlaceFromQuery(searchedLocation, callback);
 
+
     });
 
 
@@ -261,6 +263,7 @@ function initMap() {
     $(cityDropdown).on("change", function() { // upon changing cityDropdown, this grabs your selection and puts a marker on it
 
         DeleteMarkers();
+        $("#city-dropdown").prop("disabled", true);
 
         var desiredLocation = {
             query: cityDropdown.val(),
@@ -279,6 +282,7 @@ function initMap() {
 
     function callback(results, status) {
         console.log("results", results);
+        callCounter = 0;
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 var place = results[i];
@@ -368,6 +372,7 @@ function initMap() {
             }
 
         }
+        checkCallCounter();
     }
 
     function callbackLodging(results, status) {
@@ -381,6 +386,7 @@ function initMap() {
             }
 
         }
+        checkCallCounter();
     }
 
     function callbackTourist(results, status) {
@@ -392,6 +398,7 @@ function initMap() {
                 createMarkerTourist(results[i]);
             }
         }
+        checkCallCounter();
     }
 
 
@@ -409,7 +416,14 @@ function initMap() {
         }
     }
 
+    function checkCallCounter() {
+        callCounter += 1
+        if (callCounter == 7) {
+            console.log("all calls are done");
+            $("#city-dropdown").prop("disabled", false);
 
+        }
+    }
 
     // RESTAURANT MARKER TOGGLES
 

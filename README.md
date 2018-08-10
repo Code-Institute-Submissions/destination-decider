@@ -61,7 +61,7 @@ The testing for this site was done manually. The majority of the testing was to 
 ##### Dropdown testing
 
 * Selecting a continent, country and city. Letting the map search and then resetting back to default.
-* Selecting a continent, country and city and then selecting another city (Bug found, changing city really fast returns no results or markers)
+* Selecting a continent, country and city and then selecting another city (Bug found, changing city really fast returns no results or markers. Fixed by adding a counter to the number of calls and disabling the dropdowns until all calls had been completed.)
 * Selecting a continent, country and city and then using the search function to find a different location.
 
 ##### Reset button testing
